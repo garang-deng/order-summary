@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* primary colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* neutral colors  */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 900;
+  color: var(--dark-blue);
+  font-size: 1.65em;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  background: url(images/pattern-background-mobile.svg), var(--pale-blue);
+  background-repeat: no-repeat;
+  padding: 20%;
+}
+
+main {
+  width: 90vw;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.text {
+  padding: 30px;
+}
+
+.description p {
+  color: var(--desaturated-blue);
+}
+
+.prices {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+}
+
+.prices img {
+  width: 32px;
+}
+
+.prices p {
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+.prices p span {
+  color: var(--desaturated-blue);
+  font-weight: normal;
+  display: block;
+}
+
+.prices span a {
+  color: var(--bright-blue);
+}
+
+.prices span a:hover {
+  color: rgb(89, 87, 230);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 4px rgba(221, 160, 221, 0.385);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(89, 87, 230);
+}
+
+.text p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+.text p a:hover {
+  color: var(--dark-blue);
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    font-size: 15px;
+    background: url(images/pattern-background-mobile.svg), var(--pale-blue);
+    background-repeat: no-repeat;
+  }
+  .prices p {
+    margin-right: 80px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 14px;
+    background: url(images/pattern-background-desktop.svg), var(--pale-blue);
+    background-repeat: no-repeat;
+  }
+  main {
+    width: 50vw;
+  }
+  .prices p {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  body {
+    font-size: 14px;
+    background: url(images/pattern-background-desktop.svg), var(--pale-blue);
+    background-repeat: no-repeat;
+  }
+  main {
+    width: 30vw;
+  }
+  .prices p {
+    margin-right: 100px;
+  }
+}
