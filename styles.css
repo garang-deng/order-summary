@@ -34,7 +34,7 @@ body {
   line-height: 1.4;
   background: url(images/pattern-background-mobile.svg), var(--pale-blue);
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 main {
