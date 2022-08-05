@@ -107,7 +107,7 @@ button {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 6px 4px rgba(221, 160, 221, 0.385);
+  box-shadow: 0 10px 10px rgba(221, 160, 221, 0.385);
   cursor: pointer;
 }
 
